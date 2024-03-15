@@ -18,4 +18,4 @@ Auto-generated docs are determined by world settings. Please check the following
 - Check `baseGameVersion` is `*` to generate the newest contents
 - Check `editorWorldType` is `1` for successfully generating `project` command
 - Check `eduOffer` and `educationFeaturesEnabled `are `1`s to generate Education Edition featured contents
-- To generate integrated edu contents, you need hook `DedicatedServer::isEduMode` to always return `true` (you can use [PreLoader](https://github.com/LiteLDev/PreLoader) to complete this)
+- To generate integrated edu contents, you need hook `DedicatedServer::isEduMode` to always return `true` (you can use [PreLoader](https://github.com/LiteLDev/PreLoader) to complete this, e.g. [a ready-made plugin](https://github.com/MiemieMethod/bedrock-docs-assistant-for-preloader))
