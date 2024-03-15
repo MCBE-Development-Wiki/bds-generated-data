@@ -5,7 +5,7 @@
 Create a file named `test_config.json` under the BDS directory root and fill it with:
 
 ```json
-{ "generate_documentation": false }
+{ "generate_documentation": true }
 ```
 
 Execute `bedrock_server.exe` and you will find docs generated in the `docs` folder.
