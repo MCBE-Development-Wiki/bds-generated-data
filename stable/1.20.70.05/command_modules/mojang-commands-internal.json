@@ -1,329 +1,119 @@
 {
    "command_enums" : [
       {
-         "name" : "Ability",
+         "name" : "AgentDirectionCommand",
          "values" : [
             {
-               "value" : "mayfly"
+               "value" : "move"
             },
             {
-               "value" : "mute"
+               "value" : "detect"
             },
             {
-               "value" : "worldbuilder"
+               "value" : "attack"
+            },
+            {
+               "value" : "detectredstone"
+            },
+            {
+               "value" : "dropall"
+            },
+            {
+               "value" : "inspectdata"
+            },
+            {
+               "value" : "till"
             }
          ]
       },
       {
-         "name" : "Boolean",
+         "name" : "AgentDirection",
          "values" : [
             {
-               "value" : "true"
+               "value" : "up"
             },
             {
-               "value" : "false"
+               "value" : "down"
+            },
+            {
+               "value" : "forward"
+            },
+            {
+               "value" : "back"
+            },
+            {
+               "value" : "left"
+            },
+            {
+               "value" : "right"
             }
          ]
       },
       {
-         "name" : "AllowListAction",
+         "name" : "AgentTurnCommand",
          "values" : [
             {
-               "value" : "add"
-            },
-            {
-               "value" : "remove"
-            },
-            {
-               "value" : "list"
-            },
-            {
-               "value" : "reload"
-            },
-            {
-               "value" : "on"
-            },
-            {
-               "value" : "off"
+               "value" : "turn"
             }
          ]
       },
       {
-         "name" : "set",
+         "name" : "AgentTurnDirection",
          "values" : [
             {
-               "value" : "set"
+               "value" : "left"
+            },
+            {
+               "value" : "right"
             }
          ]
       },
       {
-         "name" : "CameraPresets",
+         "name" : "AgentItemCommand",
          "values" : [
             {
-               "value" : "minecraft:first_person"
+               "value" : "getitemcount"
             },
             {
-               "value" : "minecraft:free"
+               "value" : "getitemspace"
             },
             {
-               "value" : "minecraft:third_person"
-            },
-            {
-               "value" : "minecraft:third_person_front"
-            },
-            {
-               "value" : "example:example_free"
-            },
-            {
-               "value" : "example:example_player_effects"
-            },
-            {
-               "value" : "example:example_player_listener"
+               "value" : "getitemdetail"
             }
          ]
       },
       {
-         "name" : "ease",
+         "name" : "AgentCommand",
          "values" : [
             {
-               "value" : "ease"
+               "value" : "create"
+            },
+            {
+               "value" : "getposition"
             }
          ]
       },
       {
-         "name" : "Easing",
+         "name" : "AgentTransferCommand",
          "values" : [
             {
-               "value" : "linear"
-            },
-            {
-               "value" : "spring"
-            },
-            {
-               "value" : "in_quad"
-            },
-            {
-               "value" : "out_quad"
-            },
-            {
-               "value" : "in_out_quad"
-            },
-            {
-               "value" : "in_cubic"
-            },
-            {
-               "value" : "out_cubic"
-            },
-            {
-               "value" : "in_out_cubic"
-            },
-            {
-               "value" : "in_quart"
-            },
-            {
-               "value" : "out_quart"
-            },
-            {
-               "value" : "in_out_quart"
-            },
-            {
-               "value" : "in_quint"
-            },
-            {
-               "value" : "out_quint"
-            },
-            {
-               "value" : "in_out_quint"
-            },
-            {
-               "value" : "in_sine"
-            },
-            {
-               "value" : "out_sine"
-            },
-            {
-               "value" : "in_out_sine"
-            },
-            {
-               "value" : "in_expo"
-            },
-            {
-               "value" : "out_expo"
-            },
-            {
-               "value" : "in_out_expo"
-            },
-            {
-               "value" : "in_circ"
-            },
-            {
-               "value" : "out_circ"
-            },
-            {
-               "value" : "in_out_circ"
-            },
-            {
-               "value" : "in_bounce"
-            },
-            {
-               "value" : "out_bounce"
-            },
-            {
-               "value" : "in_out_bounce"
-            },
-            {
-               "value" : "in_back"
-            },
-            {
-               "value" : "out_back"
-            },
-            {
-               "value" : "in_out_back"
-            },
-            {
-               "value" : "in_elastic"
-            },
-            {
-               "value" : "out_elastic"
-            },
-            {
-               "value" : "in_out_elastic"
+               "value" : "transfer"
             }
          ]
       },
       {
-         "name" : "pos",
+         "name" : "AgentDropCommand",
          "values" : [
             {
-               "value" : "pos"
+               "value" : "drop"
             }
          ]
       },
       {
-         "name" : "rot",
+         "name" : "AgentCollectCommand",
          "values" : [
             {
-               "value" : "rot"
-            }
-         ]
-      },
-      {
-         "name" : "facing",
-         "values" : [
-            {
-               "value" : "facing"
-            }
-         ]
-      },
-      {
-         "name" : "default",
-         "values" : [
-            {
-               "value" : "default"
-            }
-         ]
-      },
-      {
-         "name" : "clear",
-         "values" : [
-            {
-               "value" : "clear"
-            }
-         ]
-      },
-      {
-         "name" : "fade",
-         "values" : [
-            {
-               "value" : "fade"
-            }
-         ]
-      },
-      {
-         "name" : "time",
-         "values" : [
-            {
-               "value" : "time"
-            }
-         ]
-      },
-      {
-         "name" : "color",
-         "values" : [
-            {
-               "value" : "color"
-            }
-         ]
-      },
-      {
-         "name" : "CameraShakeActionAdd",
-         "values" : [
-            {
-               "value" : "add"
-            }
-         ]
-      },
-      {
-         "name" : "CameraShakeType",
-         "values" : [
-            {
-               "value" : "positional"
-            },
-            {
-               "value" : "rotational"
-            }
-         ]
-      },
-      {
-         "name" : "CameraShakeActionStop",
-         "values" : [
-            {
-               "value" : "stop"
-            }
-         ]
-      },
-      {
-         "name" : "BoolSettingName",
-         "values" : [
-            {
-               "value" : "allow-cheats"
-            }
-         ]
-      },
-      {
-         "name" : "DifficultySettingName",
-         "values" : [
-            {
-               "value" : "difficulty"
-            }
-         ]
-      },
-      {
-         "name" : "Difficulty",
-         "values" : [
-            {
-               "value" : "normal"
-            },
-            {
-               "value" : "peaceful"
-            },
-            {
-               "value" : "easy"
-            },
-            {
-               "value" : "hard"
-            },
-            {
-               "value" : "p"
-            },
-            {
-               "value" : "e"
-            },
-            {
-               "value" : "n"
-            },
-            {
-               "value" : "h"
+               "value" : "collect"
             }
          ]
       },
@@ -2893,120 +2683,6 @@
                "value" : "smooth_red_sandstone_stairs"
             },
             {
-               "value" : "minecraft:element_100"
-            },
-            {
-               "value" : "element_100"
-            },
-            {
-               "value" : "minecraft:element_101"
-            },
-            {
-               "value" : "element_101"
-            },
-            {
-               "value" : "minecraft:element_102"
-            },
-            {
-               "value" : "element_102"
-            },
-            {
-               "value" : "minecraft:element_103"
-            },
-            {
-               "value" : "element_103"
-            },
-            {
-               "value" : "minecraft:element_104"
-            },
-            {
-               "value" : "element_104"
-            },
-            {
-               "value" : "minecraft:element_105"
-            },
-            {
-               "value" : "element_105"
-            },
-            {
-               "value" : "minecraft:element_106"
-            },
-            {
-               "value" : "element_106"
-            },
-            {
-               "value" : "minecraft:element_107"
-            },
-            {
-               "value" : "element_107"
-            },
-            {
-               "value" : "minecraft:element_108"
-            },
-            {
-               "value" : "element_108"
-            },
-            {
-               "value" : "minecraft:element_109"
-            },
-            {
-               "value" : "element_109"
-            },
-            {
-               "value" : "minecraft:element_113"
-            },
-            {
-               "value" : "element_113"
-            },
-            {
-               "value" : "minecraft:element_112"
-            },
-            {
-               "value" : "element_112"
-            },
-            {
-               "value" : "minecraft:element_111"
-            },
-            {
-               "value" : "element_111"
-            },
-            {
-               "value" : "minecraft:element_110"
-            },
-            {
-               "value" : "element_110"
-            },
-            {
-               "value" : "minecraft:element_117"
-            },
-            {
-               "value" : "element_117"
-            },
-            {
-               "value" : "minecraft:element_116"
-            },
-            {
-               "value" : "element_116"
-            },
-            {
-               "value" : "minecraft:element_115"
-            },
-            {
-               "value" : "element_115"
-            },
-            {
-               "value" : "minecraft:element_114"
-            },
-            {
-               "value" : "element_114"
-            },
-            {
-               "value" : "minecraft:element_118"
-            },
-            {
-               "value" : "element_118"
-            },
-            {
                "value" : "minecraft:white_glazed_terracotta"
             },
             {
@@ -4408,66 +4084,6 @@
                "value" : "deepslate_iron_ore"
             },
             {
-               "value" : "minecraft:element_1"
-            },
-            {
-               "value" : "element_1"
-            },
-            {
-               "value" : "minecraft:element_0"
-            },
-            {
-               "value" : "element_0"
-            },
-            {
-               "value" : "minecraft:element_3"
-            },
-            {
-               "value" : "element_3"
-            },
-            {
-               "value" : "minecraft:element_2"
-            },
-            {
-               "value" : "element_2"
-            },
-            {
-               "value" : "minecraft:element_5"
-            },
-            {
-               "value" : "element_5"
-            },
-            {
-               "value" : "minecraft:element_4"
-            },
-            {
-               "value" : "element_4"
-            },
-            {
-               "value" : "minecraft:element_7"
-            },
-            {
-               "value" : "element_7"
-            },
-            {
-               "value" : "minecraft:element_6"
-            },
-            {
-               "value" : "element_6"
-            },
-            {
-               "value" : "minecraft:element_9"
-            },
-            {
-               "value" : "element_9"
-            },
-            {
-               "value" : "minecraft:element_8"
-            },
-            {
-               "value" : "element_8"
-            },
-            {
                "value" : "minecraft:wheat"
             },
             {
@@ -4478,12 +4094,6 @@
             },
             {
                "value" : "waxed_cut_copper"
-            },
-            {
-               "value" : "minecraft:chemistry_table"
-            },
-            {
-               "value" : "chemistry_table"
             },
             {
                "value" : "minecraft:cobbled_deepslate_slab"
@@ -4712,546 +4322,6 @@
             },
             {
                "value" : "acacia_fence_gate"
-            },
-            {
-               "value" : "minecraft:element_10"
-            },
-            {
-               "value" : "element_10"
-            },
-            {
-               "value" : "minecraft:element_11"
-            },
-            {
-               "value" : "element_11"
-            },
-            {
-               "value" : "minecraft:element_12"
-            },
-            {
-               "value" : "element_12"
-            },
-            {
-               "value" : "minecraft:element_13"
-            },
-            {
-               "value" : "element_13"
-            },
-            {
-               "value" : "minecraft:element_14"
-            },
-            {
-               "value" : "element_14"
-            },
-            {
-               "value" : "minecraft:element_15"
-            },
-            {
-               "value" : "element_15"
-            },
-            {
-               "value" : "minecraft:element_16"
-            },
-            {
-               "value" : "element_16"
-            },
-            {
-               "value" : "minecraft:element_17"
-            },
-            {
-               "value" : "element_17"
-            },
-            {
-               "value" : "minecraft:element_18"
-            },
-            {
-               "value" : "element_18"
-            },
-            {
-               "value" : "minecraft:element_19"
-            },
-            {
-               "value" : "element_19"
-            },
-            {
-               "value" : "minecraft:element_36"
-            },
-            {
-               "value" : "element_36"
-            },
-            {
-               "value" : "minecraft:element_37"
-            },
-            {
-               "value" : "element_37"
-            },
-            {
-               "value" : "minecraft:element_34"
-            },
-            {
-               "value" : "element_34"
-            },
-            {
-               "value" : "minecraft:element_35"
-            },
-            {
-               "value" : "element_35"
-            },
-            {
-               "value" : "minecraft:element_32"
-            },
-            {
-               "value" : "element_32"
-            },
-            {
-               "value" : "minecraft:element_33"
-            },
-            {
-               "value" : "element_33"
-            },
-            {
-               "value" : "minecraft:element_30"
-            },
-            {
-               "value" : "element_30"
-            },
-            {
-               "value" : "minecraft:element_31"
-            },
-            {
-               "value" : "element_31"
-            },
-            {
-               "value" : "minecraft:element_38"
-            },
-            {
-               "value" : "element_38"
-            },
-            {
-               "value" : "minecraft:element_39"
-            },
-            {
-               "value" : "element_39"
-            },
-            {
-               "value" : "minecraft:element_29"
-            },
-            {
-               "value" : "element_29"
-            },
-            {
-               "value" : "minecraft:element_28"
-            },
-            {
-               "value" : "element_28"
-            },
-            {
-               "value" : "minecraft:element_21"
-            },
-            {
-               "value" : "element_21"
-            },
-            {
-               "value" : "minecraft:element_20"
-            },
-            {
-               "value" : "element_20"
-            },
-            {
-               "value" : "minecraft:element_23"
-            },
-            {
-               "value" : "element_23"
-            },
-            {
-               "value" : "minecraft:element_22"
-            },
-            {
-               "value" : "element_22"
-            },
-            {
-               "value" : "minecraft:element_25"
-            },
-            {
-               "value" : "element_25"
-            },
-            {
-               "value" : "minecraft:element_24"
-            },
-            {
-               "value" : "element_24"
-            },
-            {
-               "value" : "minecraft:element_27"
-            },
-            {
-               "value" : "element_27"
-            },
-            {
-               "value" : "minecraft:element_26"
-            },
-            {
-               "value" : "element_26"
-            },
-            {
-               "value" : "minecraft:element_58"
-            },
-            {
-               "value" : "element_58"
-            },
-            {
-               "value" : "minecraft:element_59"
-            },
-            {
-               "value" : "element_59"
-            },
-            {
-               "value" : "minecraft:element_54"
-            },
-            {
-               "value" : "element_54"
-            },
-            {
-               "value" : "minecraft:element_55"
-            },
-            {
-               "value" : "element_55"
-            },
-            {
-               "value" : "minecraft:element_56"
-            },
-            {
-               "value" : "element_56"
-            },
-            {
-               "value" : "minecraft:element_57"
-            },
-            {
-               "value" : "element_57"
-            },
-            {
-               "value" : "minecraft:element_50"
-            },
-            {
-               "value" : "element_50"
-            },
-            {
-               "value" : "minecraft:element_51"
-            },
-            {
-               "value" : "element_51"
-            },
-            {
-               "value" : "minecraft:element_52"
-            },
-            {
-               "value" : "element_52"
-            },
-            {
-               "value" : "minecraft:element_53"
-            },
-            {
-               "value" : "element_53"
-            },
-            {
-               "value" : "minecraft:element_49"
-            },
-            {
-               "value" : "element_49"
-            },
-            {
-               "value" : "minecraft:element_48"
-            },
-            {
-               "value" : "element_48"
-            },
-            {
-               "value" : "minecraft:element_47"
-            },
-            {
-               "value" : "element_47"
-            },
-            {
-               "value" : "minecraft:element_46"
-            },
-            {
-               "value" : "element_46"
-            },
-            {
-               "value" : "minecraft:element_45"
-            },
-            {
-               "value" : "element_45"
-            },
-            {
-               "value" : "minecraft:element_44"
-            },
-            {
-               "value" : "element_44"
-            },
-            {
-               "value" : "minecraft:element_43"
-            },
-            {
-               "value" : "element_43"
-            },
-            {
-               "value" : "minecraft:element_42"
-            },
-            {
-               "value" : "element_42"
-            },
-            {
-               "value" : "minecraft:element_41"
-            },
-            {
-               "value" : "element_41"
-            },
-            {
-               "value" : "minecraft:element_40"
-            },
-            {
-               "value" : "element_40"
-            },
-            {
-               "value" : "minecraft:element_72"
-            },
-            {
-               "value" : "element_72"
-            },
-            {
-               "value" : "minecraft:element_73"
-            },
-            {
-               "value" : "element_73"
-            },
-            {
-               "value" : "minecraft:element_70"
-            },
-            {
-               "value" : "element_70"
-            },
-            {
-               "value" : "minecraft:element_71"
-            },
-            {
-               "value" : "element_71"
-            },
-            {
-               "value" : "minecraft:element_76"
-            },
-            {
-               "value" : "element_76"
-            },
-            {
-               "value" : "minecraft:element_77"
-            },
-            {
-               "value" : "element_77"
-            },
-            {
-               "value" : "minecraft:element_74"
-            },
-            {
-               "value" : "element_74"
-            },
-            {
-               "value" : "minecraft:element_75"
-            },
-            {
-               "value" : "element_75"
-            },
-            {
-               "value" : "minecraft:element_78"
-            },
-            {
-               "value" : "element_78"
-            },
-            {
-               "value" : "minecraft:element_79"
-            },
-            {
-               "value" : "element_79"
-            },
-            {
-               "value" : "minecraft:element_65"
-            },
-            {
-               "value" : "element_65"
-            },
-            {
-               "value" : "minecraft:element_64"
-            },
-            {
-               "value" : "element_64"
-            },
-            {
-               "value" : "minecraft:element_67"
-            },
-            {
-               "value" : "element_67"
-            },
-            {
-               "value" : "minecraft:element_66"
-            },
-            {
-               "value" : "element_66"
-            },
-            {
-               "value" : "minecraft:element_61"
-            },
-            {
-               "value" : "element_61"
-            },
-            {
-               "value" : "minecraft:element_60"
-            },
-            {
-               "value" : "element_60"
-            },
-            {
-               "value" : "minecraft:element_63"
-            },
-            {
-               "value" : "element_63"
-            },
-            {
-               "value" : "minecraft:element_62"
-            },
-            {
-               "value" : "element_62"
-            },
-            {
-               "value" : "minecraft:element_69"
-            },
-            {
-               "value" : "element_69"
-            },
-            {
-               "value" : "minecraft:element_68"
-            },
-            {
-               "value" : "element_68"
-            },
-            {
-               "value" : "minecraft:element_98"
-            },
-            {
-               "value" : "element_98"
-            },
-            {
-               "value" : "minecraft:element_99"
-            },
-            {
-               "value" : "element_99"
-            },
-            {
-               "value" : "minecraft:element_90"
-            },
-            {
-               "value" : "element_90"
-            },
-            {
-               "value" : "minecraft:element_91"
-            },
-            {
-               "value" : "element_91"
-            },
-            {
-               "value" : "minecraft:element_92"
-            },
-            {
-               "value" : "element_92"
-            },
-            {
-               "value" : "minecraft:element_93"
-            },
-            {
-               "value" : "element_93"
-            },
-            {
-               "value" : "minecraft:element_94"
-            },
-            {
-               "value" : "element_94"
-            },
-            {
-               "value" : "minecraft:element_95"
-            },
-            {
-               "value" : "element_95"
-            },
-            {
-               "value" : "minecraft:element_96"
-            },
-            {
-               "value" : "element_96"
-            },
-            {
-               "value" : "minecraft:element_97"
-            },
-            {
-               "value" : "element_97"
-            },
-            {
-               "value" : "minecraft:element_89"
-            },
-            {
-               "value" : "element_89"
-            },
-            {
-               "value" : "minecraft:element_88"
-            },
-            {
-               "value" : "element_88"
-            },
-            {
-               "value" : "minecraft:element_83"
-            },
-            {
-               "value" : "element_83"
-            },
-            {
-               "value" : "minecraft:element_82"
-            },
-            {
-               "value" : "element_82"
-            },
-            {
-               "value" : "minecraft:element_81"
-            },
-            {
-               "value" : "element_81"
-            },
-            {
-               "value" : "minecraft:element_80"
-            },
-            {
-               "value" : "element_80"
-            },
-            {
-               "value" : "minecraft:element_87"
-            },
-            {
-               "value" : "element_87"
-            },
-            {
-               "value" : "minecraft:element_86"
-            },
-            {
-               "value" : "element_86"
-            },
-            {
-               "value" : "minecraft:element_85"
-            },
-            {
-               "value" : "element_85"
-            },
-            {
-               "value" : "minecraft:element_84"
-            },
-            {
-               "value" : "element_84"
             },
             {
                "value" : "minecraft:lapis_ore"
@@ -8511,6 +7581,383 @@
          ]
       },
       {
+         "name" : "AgentCollectAllItems",
+         "values" : [
+            {
+               "value" : "all"
+            }
+         ]
+      },
+      {
+         "name" : "AgentPlaceCommand",
+         "values" : [
+            {
+               "value" : "place"
+            }
+         ]
+      },
+      {
+         "name" : "AgentSetItemCommand",
+         "values" : [
+            {
+               "value" : "setitem"
+            }
+         ]
+      },
+      {
+         "name" : "AgentTPCommand",
+         "values" : [
+            {
+               "value" : "tp"
+            }
+         ]
+      },
+      {
+         "name" : "AgentTeleportFacing",
+         "values" : [
+            {
+               "value" : "facing"
+            }
+         ]
+      },
+      {
+         "name" : "AGENT_DESTROY",
+         "values" : [
+            {
+               "value" : "destroy"
+            }
+         ]
+      },
+      {
+         "name" : "AGENT_INSPECT",
+         "values" : [
+            {
+               "value" : "inspect"
+            }
+         ]
+      },
+      {
+         "name" : "AGENT_INTERACT",
+         "values" : [
+            {
+               "value" : "interact"
+            }
+         ]
+      },
+      {
+         "name" : "AllowListAction",
+         "values" : [
+            {
+               "value" : "add"
+            },
+            {
+               "value" : "remove"
+            },
+            {
+               "value" : "list"
+            },
+            {
+               "value" : "reload"
+            },
+            {
+               "value" : "on"
+            },
+            {
+               "value" : "off"
+            }
+         ]
+      },
+      {
+         "name" : "set",
+         "values" : [
+            {
+               "value" : "set"
+            }
+         ]
+      },
+      {
+         "name" : "CameraPresets",
+         "values" : [
+            {
+               "value" : "minecraft:first_person"
+            },
+            {
+               "value" : "minecraft:free"
+            },
+            {
+               "value" : "minecraft:third_person"
+            },
+            {
+               "value" : "minecraft:third_person_front"
+            },
+            {
+               "value" : "example:example_free"
+            },
+            {
+               "value" : "example:example_player_effects"
+            },
+            {
+               "value" : "example:example_player_listener"
+            }
+         ]
+      },
+      {
+         "name" : "ease",
+         "values" : [
+            {
+               "value" : "ease"
+            }
+         ]
+      },
+      {
+         "name" : "Easing",
+         "values" : [
+            {
+               "value" : "linear"
+            },
+            {
+               "value" : "spring"
+            },
+            {
+               "value" : "in_quad"
+            },
+            {
+               "value" : "out_quad"
+            },
+            {
+               "value" : "in_out_quad"
+            },
+            {
+               "value" : "in_cubic"
+            },
+            {
+               "value" : "out_cubic"
+            },
+            {
+               "value" : "in_out_cubic"
+            },
+            {
+               "value" : "in_quart"
+            },
+            {
+               "value" : "out_quart"
+            },
+            {
+               "value" : "in_out_quart"
+            },
+            {
+               "value" : "in_quint"
+            },
+            {
+               "value" : "out_quint"
+            },
+            {
+               "value" : "in_out_quint"
+            },
+            {
+               "value" : "in_sine"
+            },
+            {
+               "value" : "out_sine"
+            },
+            {
+               "value" : "in_out_sine"
+            },
+            {
+               "value" : "in_expo"
+            },
+            {
+               "value" : "out_expo"
+            },
+            {
+               "value" : "in_out_expo"
+            },
+            {
+               "value" : "in_circ"
+            },
+            {
+               "value" : "out_circ"
+            },
+            {
+               "value" : "in_out_circ"
+            },
+            {
+               "value" : "in_bounce"
+            },
+            {
+               "value" : "out_bounce"
+            },
+            {
+               "value" : "in_out_bounce"
+            },
+            {
+               "value" : "in_back"
+            },
+            {
+               "value" : "out_back"
+            },
+            {
+               "value" : "in_out_back"
+            },
+            {
+               "value" : "in_elastic"
+            },
+            {
+               "value" : "out_elastic"
+            },
+            {
+               "value" : "in_out_elastic"
+            }
+         ]
+      },
+      {
+         "name" : "pos",
+         "values" : [
+            {
+               "value" : "pos"
+            }
+         ]
+      },
+      {
+         "name" : "rot",
+         "values" : [
+            {
+               "value" : "rot"
+            }
+         ]
+      },
+      {
+         "name" : "facing",
+         "values" : [
+            {
+               "value" : "facing"
+            }
+         ]
+      },
+      {
+         "name" : "default",
+         "values" : [
+            {
+               "value" : "default"
+            }
+         ]
+      },
+      {
+         "name" : "clear",
+         "values" : [
+            {
+               "value" : "clear"
+            }
+         ]
+      },
+      {
+         "name" : "fade",
+         "values" : [
+            {
+               "value" : "fade"
+            }
+         ]
+      },
+      {
+         "name" : "time",
+         "values" : [
+            {
+               "value" : "time"
+            }
+         ]
+      },
+      {
+         "name" : "color",
+         "values" : [
+            {
+               "value" : "color"
+            }
+         ]
+      },
+      {
+         "name" : "CameraShakeActionAdd",
+         "values" : [
+            {
+               "value" : "add"
+            }
+         ]
+      },
+      {
+         "name" : "CameraShakeType",
+         "values" : [
+            {
+               "value" : "positional"
+            },
+            {
+               "value" : "rotational"
+            }
+         ]
+      },
+      {
+         "name" : "CameraShakeActionStop",
+         "values" : [
+            {
+               "value" : "stop"
+            }
+         ]
+      },
+      {
+         "name" : "BoolSettingName",
+         "values" : [
+            {
+               "value" : "allow-cheats"
+            }
+         ]
+      },
+      {
+         "name" : "Boolean",
+         "values" : [
+            {
+               "value" : "true"
+            },
+            {
+               "value" : "false"
+            }
+         ]
+      },
+      {
+         "name" : "DifficultySettingName",
+         "values" : [
+            {
+               "value" : "difficulty"
+            }
+         ]
+      },
+      {
+         "name" : "Difficulty",
+         "values" : [
+            {
+               "value" : "normal"
+            },
+            {
+               "value" : "peaceful"
+            },
+            {
+               "value" : "easy"
+            },
+            {
+               "value" : "hard"
+            },
+            {
+               "value" : "p"
+            },
+            {
+               "value" : "e"
+            },
+            {
+               "value" : "n"
+            },
+            {
+               "value" : "h"
+            }
+         ]
+      },
+      {
          "name" : "MaskMode",
          "values" : [
             {
@@ -11463,120 +10910,6 @@
                "value" : "smooth_red_sandstone_stairs"
             },
             {
-               "value" : "minecraft:element_100"
-            },
-            {
-               "value" : "element_100"
-            },
-            {
-               "value" : "minecraft:element_101"
-            },
-            {
-               "value" : "element_101"
-            },
-            {
-               "value" : "minecraft:element_102"
-            },
-            {
-               "value" : "element_102"
-            },
-            {
-               "value" : "minecraft:element_103"
-            },
-            {
-               "value" : "element_103"
-            },
-            {
-               "value" : "minecraft:element_104"
-            },
-            {
-               "value" : "element_104"
-            },
-            {
-               "value" : "minecraft:element_105"
-            },
-            {
-               "value" : "element_105"
-            },
-            {
-               "value" : "minecraft:element_106"
-            },
-            {
-               "value" : "element_106"
-            },
-            {
-               "value" : "minecraft:element_107"
-            },
-            {
-               "value" : "element_107"
-            },
-            {
-               "value" : "minecraft:element_108"
-            },
-            {
-               "value" : "element_108"
-            },
-            {
-               "value" : "minecraft:element_109"
-            },
-            {
-               "value" : "element_109"
-            },
-            {
-               "value" : "minecraft:element_113"
-            },
-            {
-               "value" : "element_113"
-            },
-            {
-               "value" : "minecraft:element_112"
-            },
-            {
-               "value" : "element_112"
-            },
-            {
-               "value" : "minecraft:element_111"
-            },
-            {
-               "value" : "element_111"
-            },
-            {
-               "value" : "minecraft:element_110"
-            },
-            {
-               "value" : "element_110"
-            },
-            {
-               "value" : "minecraft:element_117"
-            },
-            {
-               "value" : "element_117"
-            },
-            {
-               "value" : "minecraft:element_116"
-            },
-            {
-               "value" : "element_116"
-            },
-            {
-               "value" : "minecraft:element_115"
-            },
-            {
-               "value" : "element_115"
-            },
-            {
-               "value" : "minecraft:element_114"
-            },
-            {
-               "value" : "element_114"
-            },
-            {
-               "value" : "minecraft:element_118"
-            },
-            {
-               "value" : "element_118"
-            },
-            {
                "value" : "minecraft:white_glazed_terracotta"
             },
             {
@@ -13197,66 +12530,6 @@
                "value" : "deepslate_iron_ore"
             },
             {
-               "value" : "minecraft:element_1"
-            },
-            {
-               "value" : "element_1"
-            },
-            {
-               "value" : "minecraft:element_0"
-            },
-            {
-               "value" : "element_0"
-            },
-            {
-               "value" : "minecraft:element_3"
-            },
-            {
-               "value" : "element_3"
-            },
-            {
-               "value" : "minecraft:element_2"
-            },
-            {
-               "value" : "element_2"
-            },
-            {
-               "value" : "minecraft:element_5"
-            },
-            {
-               "value" : "element_5"
-            },
-            {
-               "value" : "minecraft:element_4"
-            },
-            {
-               "value" : "element_4"
-            },
-            {
-               "value" : "minecraft:element_7"
-            },
-            {
-               "value" : "element_7"
-            },
-            {
-               "value" : "minecraft:element_6"
-            },
-            {
-               "value" : "element_6"
-            },
-            {
-               "value" : "minecraft:element_9"
-            },
-            {
-               "value" : "element_9"
-            },
-            {
-               "value" : "minecraft:element_8"
-            },
-            {
-               "value" : "element_8"
-            },
-            {
                "value" : "minecraft:wheat"
             },
             {
@@ -13267,12 +12540,6 @@
             },
             {
                "value" : "waxed_cut_copper"
-            },
-            {
-               "value" : "minecraft:chemistry_table"
-            },
-            {
-               "value" : "chemistry_table"
             },
             {
                "value" : "minecraft:cobbled_deepslate_slab"
@@ -13573,546 +12840,6 @@
             },
             {
                "value" : "lit_deepslate_redstone_ore"
-            },
-            {
-               "value" : "minecraft:element_10"
-            },
-            {
-               "value" : "element_10"
-            },
-            {
-               "value" : "minecraft:element_11"
-            },
-            {
-               "value" : "element_11"
-            },
-            {
-               "value" : "minecraft:element_12"
-            },
-            {
-               "value" : "element_12"
-            },
-            {
-               "value" : "minecraft:element_13"
-            },
-            {
-               "value" : "element_13"
-            },
-            {
-               "value" : "minecraft:element_14"
-            },
-            {
-               "value" : "element_14"
-            },
-            {
-               "value" : "minecraft:element_15"
-            },
-            {
-               "value" : "element_15"
-            },
-            {
-               "value" : "minecraft:element_16"
-            },
-            {
-               "value" : "element_16"
-            },
-            {
-               "value" : "minecraft:element_17"
-            },
-            {
-               "value" : "element_17"
-            },
-            {
-               "value" : "minecraft:element_18"
-            },
-            {
-               "value" : "element_18"
-            },
-            {
-               "value" : "minecraft:element_19"
-            },
-            {
-               "value" : "element_19"
-            },
-            {
-               "value" : "minecraft:element_36"
-            },
-            {
-               "value" : "element_36"
-            },
-            {
-               "value" : "minecraft:element_37"
-            },
-            {
-               "value" : "element_37"
-            },
-            {
-               "value" : "minecraft:element_34"
-            },
-            {
-               "value" : "element_34"
-            },
-            {
-               "value" : "minecraft:element_35"
-            },
-            {
-               "value" : "element_35"
-            },
-            {
-               "value" : "minecraft:element_32"
-            },
-            {
-               "value" : "element_32"
-            },
-            {
-               "value" : "minecraft:element_33"
-            },
-            {
-               "value" : "element_33"
-            },
-            {
-               "value" : "minecraft:element_30"
-            },
-            {
-               "value" : "element_30"
-            },
-            {
-               "value" : "minecraft:element_31"
-            },
-            {
-               "value" : "element_31"
-            },
-            {
-               "value" : "minecraft:element_38"
-            },
-            {
-               "value" : "element_38"
-            },
-            {
-               "value" : "minecraft:element_39"
-            },
-            {
-               "value" : "element_39"
-            },
-            {
-               "value" : "minecraft:element_29"
-            },
-            {
-               "value" : "element_29"
-            },
-            {
-               "value" : "minecraft:element_28"
-            },
-            {
-               "value" : "element_28"
-            },
-            {
-               "value" : "minecraft:element_21"
-            },
-            {
-               "value" : "element_21"
-            },
-            {
-               "value" : "minecraft:element_20"
-            },
-            {
-               "value" : "element_20"
-            },
-            {
-               "value" : "minecraft:element_23"
-            },
-            {
-               "value" : "element_23"
-            },
-            {
-               "value" : "minecraft:element_22"
-            },
-            {
-               "value" : "element_22"
-            },
-            {
-               "value" : "minecraft:element_25"
-            },
-            {
-               "value" : "element_25"
-            },
-            {
-               "value" : "minecraft:element_24"
-            },
-            {
-               "value" : "element_24"
-            },
-            {
-               "value" : "minecraft:element_27"
-            },
-            {
-               "value" : "element_27"
-            },
-            {
-               "value" : "minecraft:element_26"
-            },
-            {
-               "value" : "element_26"
-            },
-            {
-               "value" : "minecraft:element_58"
-            },
-            {
-               "value" : "element_58"
-            },
-            {
-               "value" : "minecraft:element_59"
-            },
-            {
-               "value" : "element_59"
-            },
-            {
-               "value" : "minecraft:element_54"
-            },
-            {
-               "value" : "element_54"
-            },
-            {
-               "value" : "minecraft:element_55"
-            },
-            {
-               "value" : "element_55"
-            },
-            {
-               "value" : "minecraft:element_56"
-            },
-            {
-               "value" : "element_56"
-            },
-            {
-               "value" : "minecraft:element_57"
-            },
-            {
-               "value" : "element_57"
-            },
-            {
-               "value" : "minecraft:element_50"
-            },
-            {
-               "value" : "element_50"
-            },
-            {
-               "value" : "minecraft:element_51"
-            },
-            {
-               "value" : "element_51"
-            },
-            {
-               "value" : "minecraft:element_52"
-            },
-            {
-               "value" : "element_52"
-            },
-            {
-               "value" : "minecraft:element_53"
-            },
-            {
-               "value" : "element_53"
-            },
-            {
-               "value" : "minecraft:element_49"
-            },
-            {
-               "value" : "element_49"
-            },
-            {
-               "value" : "minecraft:element_48"
-            },
-            {
-               "value" : "element_48"
-            },
-            {
-               "value" : "minecraft:element_47"
-            },
-            {
-               "value" : "element_47"
-            },
-            {
-               "value" : "minecraft:element_46"
-            },
-            {
-               "value" : "element_46"
-            },
-            {
-               "value" : "minecraft:element_45"
-            },
-            {
-               "value" : "element_45"
-            },
-            {
-               "value" : "minecraft:element_44"
-            },
-            {
-               "value" : "element_44"
-            },
-            {
-               "value" : "minecraft:element_43"
-            },
-            {
-               "value" : "element_43"
-            },
-            {
-               "value" : "minecraft:element_42"
-            },
-            {
-               "value" : "element_42"
-            },
-            {
-               "value" : "minecraft:element_41"
-            },
-            {
-               "value" : "element_41"
-            },
-            {
-               "value" : "minecraft:element_40"
-            },
-            {
-               "value" : "element_40"
-            },
-            {
-               "value" : "minecraft:element_72"
-            },
-            {
-               "value" : "element_72"
-            },
-            {
-               "value" : "minecraft:element_73"
-            },
-            {
-               "value" : "element_73"
-            },
-            {
-               "value" : "minecraft:element_70"
-            },
-            {
-               "value" : "element_70"
-            },
-            {
-               "value" : "minecraft:element_71"
-            },
-            {
-               "value" : "element_71"
-            },
-            {
-               "value" : "minecraft:element_76"
-            },
-            {
-               "value" : "element_76"
-            },
-            {
-               "value" : "minecraft:element_77"
-            },
-            {
-               "value" : "element_77"
-            },
-            {
-               "value" : "minecraft:element_74"
-            },
-            {
-               "value" : "element_74"
-            },
-            {
-               "value" : "minecraft:element_75"
-            },
-            {
-               "value" : "element_75"
-            },
-            {
-               "value" : "minecraft:element_78"
-            },
-            {
-               "value" : "element_78"
-            },
-            {
-               "value" : "minecraft:element_79"
-            },
-            {
-               "value" : "element_79"
-            },
-            {
-               "value" : "minecraft:element_65"
-            },
-            {
-               "value" : "element_65"
-            },
-            {
-               "value" : "minecraft:element_64"
-            },
-            {
-               "value" : "element_64"
-            },
-            {
-               "value" : "minecraft:element_67"
-            },
-            {
-               "value" : "element_67"
-            },
-            {
-               "value" : "minecraft:element_66"
-            },
-            {
-               "value" : "element_66"
-            },
-            {
-               "value" : "minecraft:element_61"
-            },
-            {
-               "value" : "element_61"
-            },
-            {
-               "value" : "minecraft:element_60"
-            },
-            {
-               "value" : "element_60"
-            },
-            {
-               "value" : "minecraft:element_63"
-            },
-            {
-               "value" : "element_63"
-            },
-            {
-               "value" : "minecraft:element_62"
-            },
-            {
-               "value" : "element_62"
-            },
-            {
-               "value" : "minecraft:element_69"
-            },
-            {
-               "value" : "element_69"
-            },
-            {
-               "value" : "minecraft:element_68"
-            },
-            {
-               "value" : "element_68"
-            },
-            {
-               "value" : "minecraft:element_98"
-            },
-            {
-               "value" : "element_98"
-            },
-            {
-               "value" : "minecraft:element_99"
-            },
-            {
-               "value" : "element_99"
-            },
-            {
-               "value" : "minecraft:element_90"
-            },
-            {
-               "value" : "element_90"
-            },
-            {
-               "value" : "minecraft:element_91"
-            },
-            {
-               "value" : "element_91"
-            },
-            {
-               "value" : "minecraft:element_92"
-            },
-            {
-               "value" : "element_92"
-            },
-            {
-               "value" : "minecraft:element_93"
-            },
-            {
-               "value" : "element_93"
-            },
-            {
-               "value" : "minecraft:element_94"
-            },
-            {
-               "value" : "element_94"
-            },
-            {
-               "value" : "minecraft:element_95"
-            },
-            {
-               "value" : "element_95"
-            },
-            {
-               "value" : "minecraft:element_96"
-            },
-            {
-               "value" : "element_96"
-            },
-            {
-               "value" : "minecraft:element_97"
-            },
-            {
-               "value" : "element_97"
-            },
-            {
-               "value" : "minecraft:element_89"
-            },
-            {
-               "value" : "element_89"
-            },
-            {
-               "value" : "minecraft:element_88"
-            },
-            {
-               "value" : "element_88"
-            },
-            {
-               "value" : "minecraft:element_83"
-            },
-            {
-               "value" : "element_83"
-            },
-            {
-               "value" : "minecraft:element_82"
-            },
-            {
-               "value" : "element_82"
-            },
-            {
-               "value" : "minecraft:element_81"
-            },
-            {
-               "value" : "element_81"
-            },
-            {
-               "value" : "minecraft:element_80"
-            },
-            {
-               "value" : "element_80"
-            },
-            {
-               "value" : "minecraft:element_87"
-            },
-            {
-               "value" : "element_87"
-            },
-            {
-               "value" : "minecraft:element_86"
-            },
-            {
-               "value" : "element_86"
-            },
-            {
-               "value" : "minecraft:element_85"
-            },
-            {
-               "value" : "element_85"
-            },
-            {
-               "value" : "minecraft:element_84"
-            },
-            {
-               "value" : "element_84"
             },
             {
                "value" : "minecraft:lit_smoker"
@@ -14789,6 +13516,14 @@
          ]
       },
       {
+         "name" : "CodeBuilderActionInventory",
+         "values" : [
+            {
+               "value" : "inventory"
+            }
+         ]
+      },
+      {
          "name" : "DamageCause",
          "values" : [
             {
@@ -15022,6 +13757,20 @@
             },
             {
                "value" : "darkness"
+            }
+         ]
+      },
+      {
+         "name" : "EncryptionCommandCipher",
+         "values" : [
+            {
+               "value" : "cfb8"
+            },
+            {
+               "value" : "cfb128"
+            },
+            {
+               "value" : "cfb"
             }
          ]
       },
@@ -16893,42 +15642,6 @@
                "value" : "volumearea"
             },
             {
-               "value" : "worldbuilder"
-            },
-            {
-               "value" : "ability"
-            },
-            {
-               "value" : "codebuilder"
-            },
-            {
-               "value" : "getchunkdata"
-            },
-            {
-               "value" : "getchunks"
-            },
-            {
-               "value" : "getspawnpoint"
-            },
-            {
-               "value" : "globalpause"
-            },
-            {
-               "value" : "immutableworld"
-            },
-            {
-               "value" : "lesson"
-            },
-            {
-               "value" : "takepicture"
-            },
-            {
-               "value" : "resourceuri"
-            },
-            {
-               "value" : "wb"
-            },
-            {
                "value" : "agent"
             },
             {
@@ -17059,6 +15772,20 @@
          "values" : [
             {
                "value" : "query"
+            }
+         ]
+      },
+      {
+         "name" : "ListDetails",
+         "values" : [
+            {
+               "value" : "ids"
+            },
+            {
+               "value" : "uuids"
+            },
+            {
+               "value" : "stats"
             }
          ]
       },
@@ -27082,30 +25809,6 @@
          ]
       },
       {
-         "name" : "ResourceActionClear",
-         "values" : [
-            {
-               "value" : "clear"
-            }
-         ]
-      },
-      {
-         "name" : "ResourceActionDefault",
-         "values" : [
-            {
-               "value" : "default"
-            }
-         ]
-      },
-      {
-         "name" : "ResourceActionNamed",
-         "values" : [
-            {
-               "value" : "named"
-            }
-         ]
-      },
-      {
          "name" : "RideModeStart",
          "values" : [
             {
@@ -28430,31 +27133,24 @@
    "commands" : [
       {
          "aliases" : [],
-         "description" : "Sets a player's ability.",
-         "name" : "ability",
+         "description" : "commands.agent.description",
+         "name" : "agent",
          "overloads" : [
             {
                "name" : "1",
                "params" : [
                   {
                      "is_optional" : false,
-                     "name" : "player",
+                     "name" : "command",
                      "type" : {
-                        "name" : "SELECTION"
+                        "name" : "AGENTDIRECTIONCOMMAND"
                      }
                   },
                   {
                      "is_optional" : false,
-                     "name" : "ability",
+                     "name" : "direction",
                      "type" : {
-                        "name" : "ABILITY"
-                     }
-                  },
-                  {
-                     "is_optional" : false,
-                     "name" : "value",
-                     "type" : {
-                        "name" : "BOOLEAN"
+                        "name" : "AGENTDIRECTION"
                      }
                   }
                ]
@@ -28464,16 +27160,333 @@
                "params" : [
                   {
                      "is_optional" : false,
-                     "name" : "player",
+                     "name" : "command",
                      "type" : {
-                        "name" : "SELECTION"
+                        "name" : "AGENTTURNCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "direction",
+                     "type" : {
+                        "name" : "AGENTTURNDIRECTION"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "3",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTITEMCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "slotNum",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "4",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTCOMMAND"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "5",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTTRANSFERCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "slotNum",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "quantity",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "dstSlotNum",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "6",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTDROPCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "slotNum",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "quantity",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "direction",
+                     "type" : {
+                        "name" : "AGENTDIRECTION"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "7",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTCOLLECTCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "item",
+                     "type" : {
+                        "name" : "ITEM"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "8",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTCOLLECTCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "item",
+                     "type" : {
+                        "name" : "AGENTCOLLECTALLITEMS"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "9",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTPLACECOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "slotNum",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "direction",
+                     "type" : {
+                        "name" : "AGENTDIRECTION"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "10",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTSETITEMCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "slotNum",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "item",
+                     "type" : {
+                        "name" : "ITEM"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "count",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "aux",
+                     "type" : {
+                        "name" : "INT"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "11",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTTPCOMMAND"
                      }
                   },
                   {
                      "is_optional" : true,
-                     "name" : "ability",
+                     "name" : "destination",
                      "type" : {
-                        "name" : "ABILITY"
+                        "name" : "POSITION"
+                     }
+                  },
+                  {
+                     "is_optional" : true,
+                     "name" : "y-rot",
+                     "type" : {
+                        "name" : "VAL"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "12",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "command",
+                     "type" : {
+                        "name" : "AGENTTPCOMMAND"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "destination",
+                     "type" : {
+                        "name" : "POSITION"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "facing",
+                     "type" : {
+                        "name" : "AGENTTELEPORTFACING"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "lookAtPosition",
+                     "type" : {
+                        "name" : "POSITION"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "13",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "destroy",
+                     "type" : {
+                        "name" : "AGENT_DESTROY"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "direction",
+                     "type" : {
+                        "name" : "AGENTDIRECTION"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "14",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "inspect",
+                     "type" : {
+                        "name" : "AGENT_INSPECT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "direction",
+                     "type" : {
+                        "name" : "AGENTDIRECTION"
+                     }
+                  }
+               ]
+            },
+            {
+               "name" : "15",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "interact",
+                     "type" : {
+                        "name" : "AGENT_INTERACT"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "direction",
+                     "type" : {
+                        "name" : "AGENTDIRECTION"
                      }
                   }
                ]
@@ -29814,6 +28827,19 @@
       },
       {
          "aliases" : [],
+         "description" : "Clears all Realm Events stored in the world data.",
+         "name" : "clearrealmevents",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : []
+            }
+         ],
+         "permission_level" : 4,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
          "description" : "Removes the spawn point for a player.",
          "name" : "clearspawnpoint",
          "overloads" : [
@@ -29938,6 +28964,47 @@
       },
       {
          "aliases" : [],
+         "description" : "Closes websocket connection if there is one.",
+         "name" : "closewebsocket",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : []
+            }
+         ],
+         "permission_level" : 0,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
+         "description" : "commands.codebuilder.description",
+         "name" : "codebuilder_actorinfo",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "inventory",
+                     "type" : {
+                        "name" : "CODEBUILDERACTIONINVENTORY"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "targets",
+                     "type" : {
+                        "name" : "SELECTION"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 0,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
          "description" : "Apply damage to the specified entities.",
          "name" : "damage",
          "overloads" : [
@@ -30034,6 +29101,31 @@
             }
          ],
          "permission_level" : 1,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [
+            {
+               "name" : "connect"
+            }
+         ],
+         "description" : "Attempts to connect to the websocket server on the provided URL.",
+         "name" : "dedicatedwsserver",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "serverUri",
+                     "type" : {
+                        "name" : "MESSAGE_ROOT"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 0,
          "requires_cheats" : true
       },
       {
@@ -30231,6 +29323,41 @@
             }
          ],
          "permission_level" : 1,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
+         "description" : "commands.enableencryption.description",
+         "name" : "enableencryption",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "publicKey",
+                     "type" : {
+                        "name" : "ID"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "salt",
+                     "type" : {
+                        "name" : "ID"
+                     }
+                  },
+                  {
+                     "is_optional" : true,
+                     "name" : "ciper_mode",
+                     "type" : {
+                        "name" : "ENCRYPTIONCOMMANDCIPHER"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 0,
          "requires_cheats" : true
       },
       {
@@ -31566,6 +30693,40 @@
       },
       {
          "aliases" : [],
+         "description" : "commands.geteduserverinfo.description",
+         "name" : "geteduserverinfo",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : []
+            }
+         ],
+         "permission_level" : 0,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
+         "description" : "Gets the position of the top non-air block below the specified position",
+         "name" : "gettopsolidblock",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "position",
+                     "type" : {
+                        "name" : "POSITION"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 1,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
          "description" : "Gives an item to a player.",
          "name" : "give",
          "overloads" : [
@@ -31677,27 +30838,6 @@
                      "name" : "hud_element",
                      "type" : {
                         "name" : "HUDELEMENT"
-                     }
-                  }
-               ]
-            }
-         ],
-         "permission_level" : 1,
-         "requires_cheats" : true
-      },
-      {
-         "aliases" : [],
-         "description" : "Sets the immutable state of the world.",
-         "name" : "immutableworld",
-         "overloads" : [
-            {
-               "name" : "1",
-               "params" : [
-                  {
-                     "is_optional" : true,
-                     "name" : "value",
-                     "type" : {
-                        "name" : "BOOLEAN"
                      }
                   }
                ]
@@ -31842,6 +30982,27 @@
          ],
          "permission_level" : 0,
          "requires_cheats" : false
+      },
+      {
+         "aliases" : [],
+         "description" : "commands.listd.description",
+         "name" : "listd",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : true,
+                     "name" : "details",
+                     "type" : {
+                        "name" : "LISTDETAILS"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 3,
+         "requires_cheats" : true
       },
       {
          "aliases" : [],
@@ -33026,6 +32187,27 @@
       },
       {
          "aliases" : [],
+         "description" : "Gets transform, name, and id information about the given target entity or entities.",
+         "name" : "querytarget",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "victim",
+                     "type" : {
+                        "name" : "SELECTION"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 2,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
          "description" : "Unlocks recipe in the recipe book for a player.",
          "name" : "recipe",
          "overloads" : [
@@ -33370,76 +32552,6 @@
                      "name" : "components",
                      "type" : {
                         "name" : "JSON_OBJECT"
-                     }
-                  }
-               ]
-            }
-         ],
-         "permission_level" : 1,
-         "requires_cheats" : true
-      },
-      {
-         "aliases" : [],
-         "description" : "commands.resourceuri.description",
-         "name" : "resourceuri",
-         "overloads" : [
-            {
-               "name" : "1",
-               "params" : []
-            },
-            {
-               "name" : "2",
-               "params" : [
-                  {
-                     "is_optional" : false,
-                     "name" : "cmd",
-                     "type" : {
-                        "name" : "RESOURCEACTIONCLEAR"
-                     }
-                  }
-               ]
-            },
-            {
-               "name" : "3",
-               "params" : [
-                  {
-                     "is_optional" : false,
-                     "name" : "cmd",
-                     "type" : {
-                        "name" : "RESOURCEACTIONDEFAULT"
-                     }
-                  },
-                  {
-                     "is_optional" : true,
-                     "name" : "uri",
-                     "type" : {
-                        "name" : "RAWTEXT"
-                     }
-                  }
-               ]
-            },
-            {
-               "name" : "4",
-               "params" : [
-                  {
-                     "is_optional" : false,
-                     "name" : "cmd",
-                     "type" : {
-                        "name" : "RESOURCEACTIONNAMED"
-                     }
-                  },
-                  {
-                     "is_optional" : false,
-                     "name" : "name",
-                     "type" : {
-                        "name" : "ID"
-                     }
-                  },
-                  {
-                     "is_optional" : true,
-                     "name" : "uri",
-                     "type" : {
-                        "name" : "RAWTEXT"
                      }
                   }
                ]
@@ -35107,65 +34219,6 @@
          "requires_cheats" : true
       },
       {
-         "aliases" : [],
-         "description" : "commands.takepicture.description",
-         "name" : "takepicture",
-         "overloads" : [
-            {
-               "name" : "1",
-               "params" : [
-                  {
-                     "is_optional" : false,
-                     "name" : "targetCamera",
-                     "type" : {
-                        "name" : "SELECTION"
-                     }
-                  },
-                  {
-                     "is_optional" : false,
-                     "name" : "targetPlayer",
-                     "type" : {
-                        "name" : "SELECTION"
-                     }
-                  }
-               ]
-            },
-            {
-               "name" : "2",
-               "params" : [
-                  {
-                     "is_optional" : false,
-                     "name" : "cameraSpawnLocation",
-                     "type" : {
-                        "name" : "POSITION"
-                     }
-                  },
-                  {
-                     "is_optional" : false,
-                     "name" : "targetPlayer",
-                     "type" : {
-                        "name" : "SELECTION"
-                     }
-                  }
-               ]
-            },
-            {
-               "name" : "3",
-               "params" : [
-                  {
-                     "is_optional" : false,
-                     "name" : "targetPlayer",
-                     "type" : {
-                        "name" : "SELECTION"
-                     }
-                  }
-               ]
-            }
-         ],
-         "permission_level" : 1,
-         "requires_cheats" : true
-      },
-      {
          "aliases" : [
             {
                "name" : "tp"
@@ -36378,23 +35431,6 @@
       {
          "aliases" : [
             {
-               "name" : "wb"
-            }
-         ],
-         "description" : "Toggle World Builder status of caller.",
-         "name" : "worldbuilder",
-         "overloads" : [
-            {
-               "name" : "1",
-               "params" : []
-            }
-         ],
-         "permission_level" : 1,
-         "requires_cheats" : true
-      },
-      {
-         "aliases" : [
-            {
                "name" : "connect"
             }
          ],
@@ -36465,7 +35501,7 @@
          "requires_cheats" : true
       }
    ],
-   "minecraft_version" : "1.20.71",
+   "minecraft_version" : "1.20.70",
    "module_type" : "commands",
-   "name" : "mojang-commands"
+   "name" : "mojang-commands-internal"
 }
