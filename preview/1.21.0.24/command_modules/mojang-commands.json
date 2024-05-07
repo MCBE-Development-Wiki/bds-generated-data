@@ -17790,6 +17790,18 @@
                "value" : "reloadconfig"
             },
             {
+               "value" : "geteduserverinfo"
+            },
+            {
+               "value" : "dedicatedwsserver"
+            },
+            {
+               "value" : "closewebsocket"
+            },
+            {
+               "value" : "enableencryption"
+            },
+            {
                "value" : "script"
             }
          ]

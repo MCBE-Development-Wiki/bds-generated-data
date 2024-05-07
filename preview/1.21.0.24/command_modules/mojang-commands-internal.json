@@ -16110,6 +16110,20 @@
          ]
       },
       {
+         "name" : "EncryptionCommandCipher",
+         "values" : [
+            {
+               "value" : "cfb8"
+            },
+            {
+               "value" : "cfb128"
+            },
+            {
+               "value" : "cfb"
+            }
+         ]
+      },
+      {
          "name" : "Enchant",
          "values" : [
             {
@@ -18083,6 +18097,18 @@
             },
             {
                "value" : "reloadconfig"
+            },
+            {
+               "value" : "geteduserverinfo"
+            },
+            {
+               "value" : "dedicatedwsserver"
+            },
+            {
+               "value" : "closewebsocket"
+            },
+            {
+               "value" : "enableencryption"
             },
             {
                "value" : "script"
@@ -32485,6 +32511,19 @@
       },
       {
          "aliases" : [],
+         "description" : "Closes websocket connection if there is one.",
+         "name" : "closewebsocket",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : []
+            }
+         ],
+         "permission_level" : 0,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
          "description" : "commands.codebuilder.description",
          "name" : "codebuilder",
          "overloads" : [
@@ -32805,6 +32844,31 @@
          "requires_cheats" : true
       },
       {
+         "aliases" : [
+            {
+               "name" : "connect"
+            }
+         ],
+         "description" : "Attempts to connect to the websocket server on the provided URL.",
+         "name" : "dedicatedwsserver",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "serverUri",
+                     "type" : {
+                        "name" : "MESSAGE_ROOT"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 0,
+         "requires_cheats" : true
+      },
+      {
          "aliases" : [],
          "description" : "Revokes operator status from a player.",
          "name" : "deop",
@@ -32999,6 +33063,41 @@
             }
          ],
          "permission_level" : 1,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
+         "description" : "commands.enableencryption.description",
+         "name" : "enableencryption",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : [
+                  {
+                     "is_optional" : false,
+                     "name" : "publicKey",
+                     "type" : {
+                        "name" : "ID"
+                     }
+                  },
+                  {
+                     "is_optional" : false,
+                     "name" : "salt",
+                     "type" : {
+                        "name" : "ID"
+                     }
+                  },
+                  {
+                     "is_optional" : true,
+                     "name" : "ciper_mode",
+                     "type" : {
+                        "name" : "ENCRYPTIONCOMMANDCIPHER"
+                     }
+                  }
+               ]
+            }
+         ],
+         "permission_level" : 0,
          "requires_cheats" : true
       },
       {
@@ -34393,6 +34492,19 @@
             }
          ],
          "permission_level" : 3,
+         "requires_cheats" : true
+      },
+      {
+         "aliases" : [],
+         "description" : "commands.geteduserverinfo.description",
+         "name" : "geteduserverinfo",
+         "overloads" : [
+            {
+               "name" : "1",
+               "params" : []
+            }
+         ],
+         "permission_level" : 0,
          "requires_cheats" : true
       },
       {
